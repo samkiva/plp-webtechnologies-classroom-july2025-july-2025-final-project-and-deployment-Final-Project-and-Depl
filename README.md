@@ -1,5 +1,5 @@
 
-eHealthKE — Kenya Telemedicine MVP
+🏨TeleHealthKE — Kenya Telemedicine MVP
 
 TeleHealthKE is a bilingual, accessible, static web application that enables remote symptom triage and appointment requests for rural patients in Kenya. It includes a clinic map, a demo dashboard, and interactive features to simulate a realistic telemedicine workflow.
 
