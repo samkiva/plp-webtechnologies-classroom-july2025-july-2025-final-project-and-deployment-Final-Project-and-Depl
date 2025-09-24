@@ -7,8 +7,7 @@ TeleHealthKE is a bilingual, accessible, static web application that enables rem
 
 🌍 Live Site
 
-👉 Live URL: https://your-username.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/telehealthke/  
-(Replace this with your actual GitHub Pages link after deployment)
+👉 Live URL: https://samkiva.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/telehealthke/map.html
 
 ---
 
