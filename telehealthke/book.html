@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeleHealthKE — Triage & Book</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header></header>
+  <main id="content" class="container">
+    <h1 data-i18n="book_title">Symptom check & appointment</h1>
+
+    <form id="bookingForm" novalidate aria-describedby="formHelp">
+      <p id="formHelp" class="muted" data-i18n="form_help">Fill the form. Your data stays on your device for demo.</p>
+
+      <label for="firstName" data-i18n="label_firstname">First name</label>
+      <input id="firstName" name="firstName" required maxlength="40" autocomplete="given-name">
+
+      <label for="phone" data-i18n="label_phone">Phone</label>
+      <input id="phone" name="phone" required pattern="^[0-9+\-\s]{8,15}$" autocomplete="tel">
+
+      <label for="subCounty" data-i18n="label_subcounty">Location (Sub-county)</label>
+      <input id="subCounty" name="subCounty" required maxlength="60">
+
+      <label for="symptoms" data-i18n="label_symptoms">Symptoms</label>
+      <textarea id="symptoms" name="symptoms" required maxlength="500" rows="4"></textarea>
+
+      <label for="urgency" data-i18n="label_urgency">Your sense of urgency</label>
+      <select id="urgency" name="urgency" required>
+        <option value="" disabled selected data-i18n="urgency_select">Select…</option>
+        <option value="low" data-i18n="urgency_low">Low</option>
+        <option value="medium" data-i18n="urgency_medium">Medium</option>
+        <option value="high" data-i18n="urgency_high">High</option>
+      </select>
+
+      <label for="preferredTime" data-i18n="label_time">Preferred time</label>
+      <input id="preferredTime" name="preferredTime" type="datetime-local" required>
+
+      <div class="consent">
+        <input type="checkbox" id="consent" required>
+        <label for="consent" data-i18n="label_consent">I consent to submit this information for demo evaluation.</label>
+      </div>
+
+      <button class="btn primary" type="submit" data-i18n="btn_submit">Submit</button>
+    </form>
+
+    <section id="triageCard" class="card hidden" aria-live="polite">
+      <h2 data-i18n="triage_result_title">Triage result</h2>
+      <p><strong data-i18n="triage_level">Level:</strong> <span id="triageResult">—</span></p>
+      <p id="triageAdvice" class="muted">—</p>
+      <div id="submitNotice" class="notice success hidden" data-i18n="submit_notice">Appointment saved locally for demo.</div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="js/components.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

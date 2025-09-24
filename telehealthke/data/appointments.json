@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1726992000000,
+    "createdAt": "2025-09-22T09:00:00.000Z",
+    "firstName": "Amina",
+    "phone": "+2547XXXXXXX",
+    "subCounty": "Kajiado East",
+    "symptoms": "Persistent cough, mild fever",
+    "urgency": "medium",
+    "preferredTime": "2025-09-23T10:30",
+    "triage": "YELLOW",
+    "status": "New"
+  }
+]

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeleHealthKE — Clinic Map</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header></header>
+  <main id="content" class="container">
+    <h1 data-i18n="map_title">Nearby clinics</h1>
+    <p class="muted" data-i18n="map_disclaimer">Sample OSM-derived data. Not comprehensive.</p>
+    <button id="showMap" class="btn primary" data-i18n="btn_showmap">Show clinics</button>
+    <div id="map" class="map hidden" role="application" aria-label="Clinic locations"></div>
+  </main>
+  <footer></footer>
+  <script src="js/components.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

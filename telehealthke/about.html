@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeleHealthKE — About</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header></header>
+  <main id="content" class="container">
+    <h1 data-i18n="about_title">About TeleHealthKE</h1>
+    <p data-i18n="about_body">TeleHealthKE is a demo MVP for rural triage and booking. No real backend or PII collection.</p>
+    <h2 data-i18n="contact_title">Contact</h2>
+    <form id="contactForm" novalidate>
+      <label for="cname" data-i18n="contact_name">Name</label>
+      <input id="cname" required maxlength="40">
+      <label for="cmsg" data-i18n="contact_msg">Message</label>
+      <textarea id="cmsg" required maxlength="500" rows="4"></textarea>
+      <button class="btn primary" type="submit" data-i18n="btn_send">Send (demo)</button>
+      <p id="cstatus" class="muted"></p>
+    </form>
+  </main>
+  <footer></footer>
+  <script src="js/components.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script>
+    document.getElementById('contactForm')?.addEventListener('submit', e => {
+      e.preventDefault(); document.getElementById('cstatus').textContent = 'Sent (demo).';
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

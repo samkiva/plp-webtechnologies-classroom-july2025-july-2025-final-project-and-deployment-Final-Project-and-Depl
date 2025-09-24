@@ -1,0 +1,6 @@
+[
+  { "name": "Kibera Community Clinic", "lat": -1.3185, "lng": 36.7844, "services": "General outpatient" },
+  { "name": "Mbagathi District Hospital", "lat": -1.3009, "lng": 36.7926, "services": "Emergency, inpatient" },
+  { "name": "Kisumu County Referral", "lat": -0.1036, "lng": 34.7617, "services": "Referral services" },
+  { "name": "Eldoret Health Centre", "lat": 0.5143, "lng": 35.2698, "services": "Outpatient, MCH" }
+]

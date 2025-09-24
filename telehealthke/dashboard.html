@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeleHealthKE — Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header></header>
+  <main id="content" class="container">
+    <h1 data-i18n="dash_title">Appointment requests (Demo)</h1>
+    <div class="actions">
+      <button id="resetDemo" class="btn" data-i18n="btn_reset">Reset demo data</button>
+    </div>
+
+    <section>
+      <table class="table">
+        <thead>
+          <tr>
+            <th data-i18n="th_time">Time</th>
+            <th data-i18n="th_name">Name</th>
+            <th data-i18n="th_phone">Phone</th>
+            <th data-i18n="th_location">Location</th>
+            <th data-i18n="th_triage">Triage</th>
+            <th data-i18n="th_status">Status</th>
+            <th data-i18n="th_action">Action</th>
+          </tr>
+        </thead>
+        <tbody id="apptBody"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 data-i18n="dash_chart_title">Appointments per day</h2>
+      <canvas id="dailyChart" width="600" height="300" aria-label="Appointments per day" role="img"></canvas>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="js/components.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
